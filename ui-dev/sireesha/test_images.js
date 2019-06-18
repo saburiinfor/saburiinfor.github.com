@@ -1,8 +1,8 @@
 {
   "id1": {
-    "im": "../images/ajax.png"
+    "im": "../assets/images/ajax.png"
   },
   "id2":  {
-    "im": "../images/threeMuskteers.jpg"
+    "im": "../assets/images/threeMuskteers.jpg"
   }
 }
