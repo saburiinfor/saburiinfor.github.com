@@ -36,23 +36,16 @@
 <script>
   (function () {
 
-    // Initializing local data which we read using ajax for now
-     $imgData = {
-    'id1':{'im':'./saburiAssociates.png'},
-
-    'id2':{'im':'./saburiAssociates=small.png'}
-    };
-
     var $f = $('#f ul');
     $.ajax({
       // data: $imgData,
-      type: 'GET',
       dataType: 'JSON',
-      url: './image.js',
+      url: '/ui-dev/assets/js/test_images.js',
       success: function (f) {
-        $.each($imgData, function (id, image) {
-          $f.append('<li><img src="' + f.im + '" /></li>');
-        });
+        console.log(f);
+        // $.each($imgData, function (id, image) {
+        //   $f.append('<li><img src="' + f.im + '" /></li>');
+        // });
       },
       error: function (response) {
         console.log(response);
