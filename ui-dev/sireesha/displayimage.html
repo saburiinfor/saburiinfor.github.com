@@ -43,7 +43,7 @@
       url: './test_images.js',
       success: function (response) {
         console.log(response);
-        $.each($imgData, function (id, image) {
+        $.each(response, function (id, image) {
           $f.append('<li><img src="' + f.im + '" /></li>');
         });
       },
