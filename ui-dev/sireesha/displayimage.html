@@ -39,10 +39,11 @@
     var $f = $('#f ul');
     $.ajax({
       // data: $imgData,
+      method: 'POST',
       dataType: 'JSON',
       url: '/ui-dev/assets/js/test_images.js',
-      success: function (f) {
-        console.log(f);
+      success: function (response) {
+        console.log(JSON.parse(response));
         // $.each($imgData, function (id, image) {
         //   $f.append('<li><img src="' + f.im + '" /></li>');
         // });
