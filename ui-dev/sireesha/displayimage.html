@@ -39,9 +39,8 @@
     var $f = $('#f ul');
     $.ajax({
       // data: $imgData,
-      method: 'POST',
       dataType: 'JSON',
-      url: '/ui-dev/assets/js/test_images.js',
+      url: 'https://saburiinfor.github.io/ui-dev/assets/js/test_images.js',
       success: function (response) {
         console.log(JSON.parse(response));
         // $.each($imgData, function (id, image) {
@@ -53,16 +52,6 @@
       }
     });
   })();
-  /*function loadDoc() {
-   var xhttp = new XMLHttpRequest();
-   xhttp.onreadystatechange = function() {
-   if (this.readyState == 4 && this.status == 200) {
-   document.getElementById("displayimage").innerHTML = this.responseText;
-   }
-   };
-   xhttp.open("GET", "images.js", true);
-   xhttp.send();*/
-
 </script>
 </body>
 </html>
