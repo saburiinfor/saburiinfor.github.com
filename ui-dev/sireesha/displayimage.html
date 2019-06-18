@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="../../../SireeshaAssignments/jquery-3.2.1.min.js"></script>
+    <style>
+        body {
+            background-color: lightblue;
+
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            font-family: verdana;
+            font-size: 20px;
+        }
+
+    </style>
+
+
+    <h3 align="center">Display Image</h3>
+
+
+</head>
+<body>
+<div id="f">
+    <ul>
+    </ul>
+    <button> show image</button>
+</div>
+<script>
+  (function () {
+
+    // Initializing local data which we read using ajax for now
+     $imgData = {
+    'id1':{'im':'./saburiAssociates.png'},
+
+    'id2':{'im':'./saburiAssociates=small.png'}
+    };
+
+    var $f = $('#f ul');
+    $.ajax({
+      // data: $imgData,
+      type: 'GET',
+      dataType: 'JSON',
+      url: './image.js',
+      success: function (f) {
+        $.each($imgData, function (id, image) {
+          $f.append('<li><img src="' + f.im + '" /></li>');
+        });
+      },
+      error: function (response) {
+        console.log(response);
+      }
+    });
+  })();
+  /*function loadDoc() {
+   var xhttp = new XMLHttpRequest();
+   xhttp.onreadystatechange = function() {
+   if (this.readyState == 4 && this.status == 200) {
+   document.getElementById("displayimage").innerHTML = this.responseText;
+   }
+   };
+   xhttp.open("GET", "images.js", true);
+   xhttp.send();*/
+
+</script>
+</body>
+</html>
+.
