@@ -42,10 +42,10 @@
       dataType: 'JSON',
       url: './test_images.js',
       success: function (response) {
-        console.log(JSON.parse(response));
-        // $.each($imgData, function (id, image) {
-        //   $f.append('<li><img src="' + f.im + '" /></li>');
-        // });
+        console.log(response);
+        $.each($imgData, function (id, image) {
+          $f.append('<li><img src="' + f.im + '" /></li>');
+        });
       },
       error: function (response) {
         console.log(response);
