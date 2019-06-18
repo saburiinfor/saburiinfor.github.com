@@ -44,7 +44,7 @@
       success: function (response) {
         console.log(response);
         $.each(response, function (id, image) {
-          $f.append('<li><img src="' + f.im + '" /></li>');
+          $f.append('<li><img src="' + image.im + '" /></li>');
         });
       },
       error: function (response) {
