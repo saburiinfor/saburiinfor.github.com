@@ -1,0 +1,24 @@
+{
+"author":[
+           {"name":"Charles Dickens",
+             "image":"http://www.dickens-online.info/images/young-charles-dickens.jpg",
+			 
+			 "about":"Charles Dickens (Charles John Huffam Dickens) was born in Landport, Portsmouth, on February 7, 1812. Charles was the second of eight children to John Dickens (1786–1851), a clerk in the Navy Pay Office, and his wife Elizabeth Dickens (1789–1863). The Dickens family moved to London in 1814 and two years later to Chatham, Kent, where Charles spent early years of his childhood. Due to the financial difficulties they moved back to London in 1822, where they settled in Camden Town, a poor neighborhood of London. 
+"},
+			 
+			{"name":"Jane Austen",
+             "image":"https://ichef.bbci.co.uk/images/ic/1200x675/p01gmhrl.jpg",
+			 
+			 "about":"Jane Austen was born on December 16, 1775, in Steventon, Hampshire, England. While not widely known in her own time, Austen's comic novels of love among the landed gentry gained popularity after 1869, and her reputation skyrocketed in the 20th century. Her novels, including Pride and Prejudice and Sense and Sensibility, are considered literary classics, bridging the gap between romance and realism. "
+			 },
+			 
+			 {"name":"Oscar Wilde",
+             "image":"https://churchpop.com/wp-content/uploads/2015/10/217-700x438.jpg",
+			 
+			 "about":"Born in Dublin on 16 October 1854, Oscar Wilde was a flamboyant and sparklingly witty Anglo-Irish playwright, poet and critic. ‘I put all my genius into my life, I put only my talent into my books’, he said to the French writer André Gide.
+
+                     Wilde shone at both Trinity College, Dublin and Magdalen College, Oxford. In London, he was a famous proponent of aestheticism, the controversial theory of art. A collection of poems (1881) was followed by The Happy Prince and Other Tales (1888) as well as lectures and essays promoting his ideas of art and beauty"
+             }
+			 
+]
+}
