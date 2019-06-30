@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+  background-image:url("https://static1.squarespace.com/static/555c9d57e4b065271009ac3c/t/5a3c5e870d92975090bc9068/1513905807201/fantasy-2861107_1920.jpg");
+}
+h2{
+color:white;
+}
+</style>
+<title>
+BLOG PAGE
+</title>
+<H2 align="center" background-color="white">BLOG PAGE</H2>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script>
+   
+   var dat=document.getElementById("blog");
+   var but=document.getElementById("blogbutton");
+   but.addEventListener("click",function(){
+  var a = new XMLHttpRequest();
+ 
+     a.open("GET", "blogp.js");
+	 a.onload=function(){
+	 var output= Json.parse(a.responsetext);
+	 renderhtml (data);
+	 };
+ a.send();
+
+   });
+   function renderhtml (data){
+      var authors="";
+	  for(i=0;i<data.length;i++){
+	  authors+="<p>"+data[i].name+data[i].image+data[i].about+".</p>";
+	  }
+   }
+   
+  </script>
+</head>
+<body>
+<div id="blog">
+    <ul>
+    </ul>
+    <button id="blogbutton">Readme</button>
+</div>
+<script src="blogp.js"></script>
+</body>
+</html>
