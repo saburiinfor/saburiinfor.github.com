@@ -15,27 +15,38 @@ BLOG PAGE
 <H2 align="center" background-color="white">BLOG PAGE</H2>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script>
-  function blogfun(){
+  /* function blogfun(){
    //var dat=document.getElementById("blog");
   // var but=document.getElementById("blogbutton");
-   //but.addEventListener("click",function(){
+   //but.addEventListener("click",function(){*/
   
-  var a = new XMLHttpRequest();
+  $("button").click(function(){
+  
+  var x = new XMLHttpRequest();
  
-     a.open("GET", "https://github.com/saburiinfor/saburiinfor.github.io/tree/master/ui-dev/sireesha");
-	 a.onload=function(){
-	 var output= Json.parse(a.responsetext);
-	 renderhtml (data);
+     x.open("GET", "blog.json");
+	 x.onload=function(){
+	 var output= Json.parse(x.responsetext);
+	  ele();
 	 };
+	});
  a.send();
 
    
-   function renderhtml (data){
-      var authors="https://github.com/saburiinfor/saburiinfor.github.io/tree/master/ui-dev/sireesha;
+   /*function renderhtml (data){
+      var authors=document.getElementById("blog").innerHTML;
 	  for(i=0;i<data.length;i++){
 	  authors+="<p>"+data[i].name+data[i].about+".</p>";
 	  }
-   }
+   }*/
+   function ele(){
+   $.getJSON("blog.json",function(a){
+     $.each(a,function(key,value){
+	   $("ul".append("<li>"+value.name+value.about+"</li>");
+	   };
+	 
+   };
+   };
    
   </script>
 </head>
@@ -43,7 +54,7 @@ BLOG PAGE
 <div id="blog">
     <ul>
     </ul>
-    <button  onclick="blogfun()">readme</button>
+    <button  onclick="blogfun()">Readme</button>
 </div>
 <script src="blog.json"></script>
 </body>
