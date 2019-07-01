@@ -22,7 +22,7 @@ BLOG PAGE
   
   var a = new XMLHttpRequest();
  
-     a.open("GET", "blog.json");
+     a.open("GET", "https://github.com/saburiinfor/saburiinfor.github.io/tree/master/ui-dev/sireesha");
 	 a.onload=function(){
 	 var output= Json.parse(a.responsetext);
 	 renderhtml (data);
@@ -31,7 +31,7 @@ BLOG PAGE
 
    
    function renderhtml (data){
-      var authors="";
+      var authors="https://github.com/saburiinfor/saburiinfor.github.io/tree/master/ui-dev/sireesha;
 	  for(i=0;i<data.length;i++){
 	  authors+="<p>"+data[i].name+data[i].about+".</p>";
 	  }
