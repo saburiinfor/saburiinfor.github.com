@@ -1,0 +1,51 @@
+header {
+    background-color:rgb(50, 114, 136);
+    }
+    h1{
+        
+            text-align:center;
+            text-shadow: 3px 2px blue;
+            padding:10px;
+             font-family : arial;
+        }
+        h2{
+            text-align:center; 
+        }
+        /*.logo{
+            background-image: url(https://media.licdn.com/dms/image/C5103AQG-63J4nkPgoQ/profile-displayphoto-shrink_200_200/0?e=1568246400&v=beta&t=No6uOQ8aLGuN8jk76NvR7mW5dLsMjhIfgLGAHBnAhmg);
+
+        }*/
+    
+        
+    body{
+            background-color:rgb(118, 187, 219);
+    
+        }
+       
+        
+  
+        
+  #flip,.a {
+                font-size: 16px;
+                padding: 10px;
+                text-align: center;
+                background-color: rgb(106, 174, 219);
+                color: white;
+                border: solid 1px #a6d8a8;
+                margin: auto;
+     
+        }
+  
+  
+        .info{
+                position: absolute;
+                    BOTTOM: 80px;
+                    right: 0;
+                    width: 300px;
+                    height: 100px;
+                    
+            }
+            #flip{
+                    display: none;
+                    } 
+  
