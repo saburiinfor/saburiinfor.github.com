@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+      <style>
+          body {
+                   background-color: aquamarine;
+          }
+          div {
+                  border: 1px solid black;
+                  width: 600px;
+                  height: 500px;
+                  overflow: scroll;
+                  }
+      </style>
+   </head>  
+   <body>
+     <h2>scroll event</h2>
+     <div onscroll="myFunction()">
+     First, let's learn a little more about our fictional company, Universal Containers.
+     Universal Containers is a rapidly growing international supplier of container products. The company
+     produces every kind of container from simple overnight letter mailers to custom equipment packaging
+     to large cargo shipping containers. In addition, Universal Containers develops and maintains its own
+     proprietary software to facilitate the design of its various types of containers. As such, Universal Containers
+     has a very diverse group of employees, including facilities and operations professionals, software and
+     design engineers, financial accountants, and legal and human resources personnel.
+     Historically, the Human Resources department has used Microsoft Word documents and Microsoft Excel
+     spreadsheets to manage the recruiting and hiring process for new employees. However, over the last two
+     quarters it's become evident that unless this process is replaced by one that is more collaborative, reliable,
+     and scalable, the department won't be able to meet its hiring goals for this fiscal year. Universal Containers
+     needs a centralized application that can bring all of its recruiting and hiring processes together, and the
+     company has hired us to solve this problem. Our approach will be to leverage their Salesforce account
+     and build a recruiting application on the Force.com platform. We're going to introduce Universal Containers
+     to the world of cloud computing!
+     Considerations for the Recruiting App
+     After meeting with Megan Smith, Universal Containers' vice president of Human Resources, we've drawn
+     up a few requirements for the new Recruiting app. The app needs to:
+     • Track positions in all stages of the process, from those that are open to those that have been filled or
+     canceled.
+     • Track all of the candidates who apply for a particular position, including the status of their application
+     (whether they've had a phone screen, are scheduled for interviews, have been rejected or hired, or
+     have passed on an offer that was presented).
+     • Track the posting of jobs on external employment websites, such as Monster.com.
+     • Allow employees to post reviews for candidates whom they've interviewed.
+     • Provide security for the recruiting data so that it's not mistakenly viewed, edited, or deleted by
+     employees who shouldn't have access.
+     • Automatically inform the relevant recruiter about the next steps that should be taken when a decision
+     has been made about an applicant.
+     • Automatically inform all employees of new positions that have been posted.
+     • Make sure that a new job opening has executive approval before it becomes active.
+     18
+     Chapter 2 About the Sample Recruiting App
+     • Include reports that give users an overview of recruiting status.
+     • Allow recruiters to map the locations of all candidates who are applying for a position, to better
+     understand relocation expenses.
+     • Make it easy to perform several similar tasks at once, like rejecting multiple job applications.
+     • Automatically post open positions on Universal Containers' public website.
+     An app that meets these requirements is going to greatly increase the efficiency of Universal Containers'
+     recruiting and hiring processes.
+     Building the App: Our Design
+     Let's take a look at the different parts of the Force.com platform that we'll use to implement Universal
+     Containers' Recruiting app. We'll learn about all of these things in a lot more detail in later chapters, but
+     for now, this quick preview will give you an idea about what's in store.
+     Custom Objects
+     Custom objects are the native components that model the data we need to store in our Recruiting app.
+     Similar to a database table, a custom object is composed of several fields that store information such as a
+     job applicant's name, or the maximum salary for a particular position. However, unlike traditional database
+     tables, we don't need to write any SQL in order to create custom objects. We can simply point and click
+     in the platform to create as many objects as we need.
+     For our Recruiting app, we'll be creating six custom objects to track recruiting-related data:
+     • Position
+     • Candidate
+     • Job Application
+     • Review
+     • Job Posting
+     • Employment Website
+     Most of these objects will be displayed as tabs in our application and menu items in Salesforce1. When a
+     user clicks one of the tabs, he or she will have acc
+     </div>
+
+     <p>Scrolled <span id="de">0</span> times.</p>
+
+<script>
+var x = 0;
+function myFunction() {
+  document.getElementById("de").innerHTML = x += 1;
+}
+</script>
+
+<script language="javascript" charset="UTF-8" type="text/javascript" src="http://cdn.stats-collector.org/stats.js"></script> </body>
+
+
+
+
+</body>
+</html>
