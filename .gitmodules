@@ -1,0 +1,4 @@
+[submodule "Contigo"]
+	path = Contigo
+	url = https://github.com/saburiinfor.github.io/Contigo
+	branch = master
