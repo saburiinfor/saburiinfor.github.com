@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+body{
+    overflow: hidden;
+    font-family: 'lato',sans-serif;
+    color: #505962;
+}
+ .navbar{
+     text-transform: uppercase;
+     font-weight: 700;
+     font-size: 14px;
+     letter-spacing: 2px;
+     background-color: rgba(0,0,0,0.6)!important;
+
+ }
+ 
+ #aboutus{ 
+    text-align: center;
+    background-color:rgb(172, 172, 163);
+    font-size: large;
+    padding-top: 200px;
+    min-height: 700px;
+    margin: 10px;
+    color:black;
+    }  
+
+    #Company{ 
+        text-align: center;
+        background-color:rgb(126, 126, 123);
+        font-size: large;
+        padding-top: 200px;
+        min-height: 700px;
+        margin: 10px;
+        }
+        #Company img{
+              width:50%;
+                border-radius: 50%;
+        } 
+        blockquote {
+            color:black;
+            text-align: center;
+        }
+        blockquote .fas{
+            color:blue;
+            margin:15px;
+        }
+        #contact{ 
+            text-align: center;
+            color: white;
+            background-color:rgb(61, 61, 58);
+            font-size: large;
+            min-height: 700px;
+            margin: 10px;
+            padding-top: 200px;
+            } 
+ .navbar-brand  img{
+        height:3.2px;
+ }
+.navbar-nav li{
+     padding-right: 11px;
+
+ }
+ .navbar-dark  .navbar-nav .nav-link{
+     color:white;
+     padding-top:13px;
+ }
+ .navbar-dark .navbar-nav .nav-link :active 
+ .navbar-dark .navbar-nav .nav-link:hover{
+     color: aqua;
+ }
+ 
+ .caption{
+     width:100%;
+     max-width: 100%;
+     position: absolute;
+     top:40%;
+     color:white;
+    
+     text-transform: uppercase;
+ } 
+ .caption h2{
+     font-size: 30px;
+     font-weight: 700;
+     letter-spacing: 3px;
+
+ }
+  .caption h3{
+      font-weight: 500;
+     font-size: 15px;
+     padding-bottom: 15px;
+ }
+ .btn-lg{
+     border-width: medium;
+     border-radius: 0;
+      border-color:white;
+     padding:10px,20px;
+     font-size: 20px;
+     color: aqua;
+ }
+ 
+
+ 
